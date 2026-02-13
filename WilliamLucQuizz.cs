@@ -78,6 +78,15 @@ namespace Back_to_School_C_
 
         }
 
+        public static void Fråga5()
+        {
+            // Skapa en for-loop som räknar ned från 100-0. Skriv ut samtliga siffror en i taget.
+            for (int i = 100; i >= 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
 
     }
 }

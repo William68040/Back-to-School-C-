@@ -27,7 +27,7 @@ namespace Back_to_School_C_
             }
         }
 
-        public static void Fråga2()
+        public static void ConvertStringToInt()
         {
             //Konvertera en strängvariabel till en integer. Gör det omöjligt för appen att krasha.
             //Om appen krashar skriv ut "Det där är inte en siffra!Konvertera en strängvariabel till en integer.
@@ -48,7 +48,7 @@ namespace Back_to_School_C_
             }
         }
 
-        public static void Fråga3()
+        public static void DeclareFruitList()
         {
             // Deklarera och instansiera en Lista med värdena "Apple", "Orange", "Banana".
             // Hämta ett objekt från listan i taget och gör så att programmet endast skriver ut Orange till konsolen.
@@ -64,7 +64,7 @@ namespace Back_to_School_C_
 
         }
 
-        public static void Fråga4()
+        public static void DeclareFruitListBackwards()
         {
            // Använd samma lista men hämta ut värdena baklänges.
            // Skriv endast ut det sista och näst sista värdet(i den "flippade" listan).
@@ -80,7 +80,7 @@ namespace Back_to_School_C_
 
         }
 
-        public static void Fråga5()
+        public static void DescendingForLoop()
         {
             // Skapa en for-loop som räknar ned från 100-0. Skriv ut samtliga siffror en i taget.
             for (int i = 100; i >= 0; i--)
@@ -89,7 +89,7 @@ namespace Back_to_School_C_
             }
         }
 
-        public static void Fråga6()
+        public static void GetCurrentDatePlus20()
         {
             //Hämta in dagens datum och lägg till 20 år. Skriv ut resultatet. 
 
@@ -98,7 +98,7 @@ namespace Back_to_School_C_
             Console.WriteLine(framtidaDatum);
         }
 
-        public static void Fråga7()
+        public static void CheckCurrentDate()
         {
             // Skapa en metod som tar emot ett datum och kollar om det är tidigare än dagens datum.
             // Om det är tidigare, ska metoden returnera false. Annars true. Ge ett passande metodnamn
@@ -136,7 +136,7 @@ namespace Back_to_School_C_
             //skapade en klass för customer med properties för namn, efternamn, telefonnummer och email.
         }
 
-        public static void Fråga9()
+        public static void CreateNewCustomer()
         {
             //Skapa en ny customer. Ge den relevanta värden och addera sedan till en lista av Customers.
 
@@ -151,7 +151,7 @@ namespace Back_to_School_C_
 
         }
 
-        public static void fråga10()
+        public static void AddNewCustomer()
         {
             // Skapa en loop som gör det att möjligt att lägga till oändligt med customers från användarens input.
             // Om användaren vill fortsätta efter varje kund: "y", annars bryt ur loopen.
@@ -182,7 +182,7 @@ namespace Back_to_School_C_
 
         }
 
-        public void fråga11(List<Customer> customers, int id)
+        public void RemoveCustomerWithSameID(List<Customer> customers, int id)
         {
             //Skapa en metod som tar emot Listan av Customers och en siffra som heter "Id".
             //Om kundlistan innehåller en kund med samma id som skickades in, ta bort kunden från listan.
@@ -200,6 +200,8 @@ namespace Back_to_School_C_
 
 
         }
+
+       
 
 
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Back_to_School_C_
 {
-    internal class Customer
+    public class Customer
     {
         //properties för en customer
         public string Name { get; set; }
@@ -14,6 +14,6 @@ namespace Back_to_School_C_
         public int PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        public int ID { get; set; }
+        public int Id { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Back_to_School_C_
 {
@@ -94,6 +95,43 @@ namespace Back_to_School_C_
             DateTime dagensDatum = DateTime.Now;
             DateTime framtidaDatum = dagensDatum.AddYears(20);
             Console.WriteLine(framtidaDatum);
+        }
+
+        public static void Fråga7()
+        {
+            // Skapa en metod som tar emot ett datum och kollar om det är tidigare än dagens datum.
+            // Om det är tidigare, ska metoden returnera false. Annars true. Ge ett passande metodnamn
+
+            {
+                DateTime today = DateTime.Today;
+
+                Console.Write("Skriv in ett datum: ");
+                string text = Console.ReadLine();
+
+                bool valid = DateTime.TryParse(text, out DateTime date);
+
+                if (valid)
+                {
+                    bool result = date.Date >= today;
+
+                    if (result)
+                        Console.WriteLine("true");
+                    else
+                        Console.WriteLine("false");
+                }
+                else
+                {
+                    Console.WriteLine("Ogiltigt datum");
+                }
+
+
+
+            }
+
+        }
+
+        public static void Fråga8 ()
+        {
 
         }
 

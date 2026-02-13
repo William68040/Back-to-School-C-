@@ -132,6 +132,50 @@ namespace Back_to_School_C_
 
         public static void Fråga8 ()
         {
+            //skapade en klass för customer med properties för namn, efternamn, telefonnummer och email.
+        }
+
+        public static void Fråga9()
+        {
+            //Skapa en ny customer. Ge den relevanta värden och addera sedan till en lista av Customers.
+
+            List<Customer> customers = new List<Customer>();
+            Customer customer1 = new Customer
+            {
+                Name = "William",
+                LastName = "Luc",
+                PhoneNumber = 0708953936,
+                Email = "williamluc888@outlook.com"
+            };
+
+        }
+
+        public static void fråga10()
+        {
+            // Skapa en loop som gör det att möjligt att lägga till oändligt med customers från användarens input.
+            // Om användaren vill fortsätta efter varje kund: "y", annars bryt ur loopen.
+
+            List<Customer> customers = new List<Customer>();
+
+            while (true)
+            {
+                Customer customer = new Customer();
+                Console.Write("Ange förnamn: ");
+                customer.Name = Console.ReadLine();
+                Console.Write("Ange efternamn: ");
+                customer.LastName = Console.ReadLine();
+                Console.Write("Ange telefonnummer: ");
+                customer.PhoneNumber = int.Parse(Console.ReadLine());
+                Console.Write("Ange email: ");
+                customer.Email = Console.ReadLine();
+                customers.Add(customer);
+                Console.Write("Vill du lägga till en till kund? (y/n): ");
+                string svar = Console.ReadLine();
+                if (svar.ToLower() != "y")
+                {
+                    break;
+                }
+            }
 
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,5 +61,23 @@ namespace Back_to_School_C_
             }
 
         }
+
+        public static void Fråga4()
+        {
+           // Använd samma lista men hämta ut värdena baklänges.
+           // Skriv endast ut det sista och näst sista värdet(i den "flippade" listan).
+
+            List<string> frukter = new List<string> { "Apple", "Orange", "Banana" };
+            for (int i = frukter.Count - 1; i >= 0; i--)
+            {
+                if (i == frukter.Count - 1 || i == frukter.Count - 2)
+                {
+                    Console.WriteLine(frukter[i]);
+                }
+            }
+
+        }
+
+
     }
 }

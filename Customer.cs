@@ -13,5 +13,7 @@ namespace Back_to_School_C_
         public string LastName { get; set; }
         public int PhoneNumber { get; set; }
         public string Email { get; set; }
+
+        public int ID { get; set; }
     }
 }

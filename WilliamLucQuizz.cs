@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -168,6 +169,8 @@ namespace Back_to_School_C_
                 customer.PhoneNumber = int.Parse(Console.ReadLine());
                 Console.Write("Ange email: ");
                 customer.Email = Console.ReadLine();
+                Console.Write("Ange ID: ");
+                customer.ID = int.Parse(Console.ReadLine());
                 customers.Add(customer);
                 Console.Write("Vill du lägga till en till kund? (y/n): ");
                 string svar = Console.ReadLine();
@@ -176,6 +179,25 @@ namespace Back_to_School_C_
                     break;
                 }
             }
+
+        }
+
+        public void fråga11(List<Customer> customers, int id)
+        {
+            //Skapa en metod som tar emot Listan av Customers och en siffra som heter "Id".
+            //Om kundlistan innehåller en kund med samma id som skickades in, ta bort kunden från listan.
+            //Skapa ett passande metodnamn.
+            Customer customerToRemove = customers.FirstOrDefault(c => c.ID == id);
+            if (customerToRemove != null)
+            {
+                customers.Remove(customerToRemove);
+                Console.WriteLine($"Kund med ID {id} har tagits bort.");
+            }
+            else
+            {
+                Console.WriteLine($"Ingen kund med ID {id} hittades.");
+            }
+
 
         }
 

@@ -87,6 +87,16 @@ namespace Back_to_School_C_
             }
         }
 
+        public static void Fråga6()
+        {
+            //Hämta in dagens datum och lägg till 20 år. Skriv ut resultatet. 
+
+            DateTime dagensDatum = DateTime.Now;
+            DateTime framtidaDatum = dagensDatum.AddYears(20);
+            Console.WriteLine(framtidaDatum);
+
+        }
+
 
     }
 }

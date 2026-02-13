@@ -143,9 +143,9 @@ namespace Back_to_School_C_
             List<Customer> customers = new List<Customer>();
             Customer customer1 = new Customer
             {
-                Name = "William",
+                FirstName = "William",
                 LastName = "Luc",
-                PhoneNumber = 0708953936,
+                PhoneNumber = "0708953936",
                 Email = "williamluc888@outlook.com"
             };
 
@@ -162,15 +162,15 @@ namespace Back_to_School_C_
             {
                 Customer customer = new Customer();
                 Console.Write("Ange förnamn: ");
-                customer.Name = Console.ReadLine();
+                customer.FirstName = Console.ReadLine();
                 Console.Write("Ange efternamn: ");
                 customer.LastName = Console.ReadLine();
                 Console.Write("Ange telefonnummer: ");
-                customer.PhoneNumber = int.Parse(Console.ReadLine());
+                customer.PhoneNumber = (Console.ReadLine());
                 Console.Write("Ange email: ");
                 customer.Email = Console.ReadLine();
                 Console.Write("Ange ID: ");
-                customer.ID = int.Parse(Console.ReadLine());
+                customer.Id = int.Parse(Console.ReadLine());
                 customers.Add(customer);
                 Console.Write("Vill du lägga till en till kund? (y/n): ");
                 string svar = Console.ReadLine();
@@ -187,7 +187,7 @@ namespace Back_to_School_C_
             //Skapa en metod som tar emot Listan av Customers och en siffra som heter "Id".
             //Om kundlistan innehåller en kund med samma id som skickades in, ta bort kunden från listan.
             //Skapa ett passande metodnamn.
-            Customer customerToRemove = customers.FirstOrDefault(c => c.ID == id);
+            Customer customerToRemove = customers.FirstOrDefault(c => c.Id == id);
             if (customerToRemove != null)
             {
                 customers.Remove(customerToRemove);

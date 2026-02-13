@@ -23,5 +23,26 @@ namespace Back_to_School_C_
                 Console.WriteLine($"Du svarade {svar}");
             }
         }
+
+        public static void Fråga2()
+        {
+            //Konvertera en strängvariabel till en integer. Gör det omöjligt för appen att krasha.
+            //Om appen krashar skriv ut "Det där är inte en siffra!Konvertera en strängvariabel till en integer.
+            //Gör det omöjligt för appen att krasha. Om appen krashar skriv ut "Det där är inte en siffra!
+
+            Console.WriteLine("Skriv ett tal");
+            string input = Console.ReadLine();
+
+            int tal;
+            
+            if (int.TryParse(input, out tal))
+            {
+                Console.WriteLine($"Du skrev talet {tal}");
+            }
+            else
+            {
+                Console.WriteLine("Det där är inte en siffra!");
+            }
+        }
     }
 }

@@ -44,5 +44,21 @@ namespace Back_to_School_C_
                 Console.WriteLine("Det där är inte en siffra!");
             }
         }
+
+        public static void Fråga3()
+        {
+            // Deklarera och instansiera en Lista med värdena "Apple", "Orange", "Banana".
+            // Hämta ett objekt från listan i taget och gör så att programmet endast skriver ut Orange till konsolen.
+
+            List<string> frukter = new List<string> { "Apple", "Orange", "Banana" };
+            foreach (string frukt in frukter)
+            {
+                if (frukt == "Orange")
+                {
+                    Console.WriteLine(frukt);
+                }
+            }
+
+        }
     }
 }
